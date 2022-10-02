@@ -1,0 +1,114 @@
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.site-wrap {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+body.offcanvas-open {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+body.offcanvas-open .site-wrap {
+  -webkit-transform: translateX(-240px);
+  -ms-transform: translateX(-240px);
+  transform: translateX(-240px);
+}
+/*-- hambur menu -----*/
+.offcanvas-toggle {
+  position: fixed;
+  z-index: 89;
+  right: 20px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 13px;
+  top: 20px;
+  color: #000;
+}
+
+.offcanvas-toggle:hover {
+  color: #000;
+  opacity: .7;
+}
+/*---x ---- hamnbur menu ----x-----*/
+
+/*---------------------lateral menu----------------------*/
+.offcanvas_menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  margin-right: -300px;
+  z-index: 100;
+  width: 300px;
+  box-shadow: 0 10px 15px 10px rgba(128, 128, 128, 0.2);
+  background-image: url("./images/via-tren.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.offcanvas_menu .overlay{
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 300px;
+  padding: 20px 30px;
+  background-image: linear-gradient(to top right,rgba(254, 226, 248, 0.75)  0%, rgba(217, 228, 245, 0.75) 100%);
+}
+
+.offcanvas_menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.offcanvas_menu ul li {
+  margin: 0 0 10px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.offcanvas_menu ul li .fa{
+  color: var(--gris-senales);
+  font-size: 40px;
+}
+
+.offcanvas_menu ul .logo{
+  border-bottom: 1px solid var(--gris-senales);
+  margin-bottom: 50px;
+}
+
+.offcanvas_menu ul li a {
+  font-size: 18px;
+  color: var(--gris-senales);
+  transition: 0.3s linear;
+}
+
+.offcanvas_menu ul li a:hover {
+  background: -webkit-linear-gradient(rgb(255,146,202),rgb(145,149,251));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  transition: .5s;
+
+}
+
+.offcanvas_menu ul li.active a {
+  background: -webkit-linear-gradient(rgb(255,146,202),rgb(145,149,251));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*----------X---------lateral menu-----------X-----------*/

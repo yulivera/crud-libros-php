@@ -1,0 +1,629 @@
+:root{
+
+	/*mis colores*/
+	--blanco-senales: #f0f0f0;
+	--blanco-trafico: #f7fcf6;
+	--gris-senales: #949699;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: var(--blanco-senales);
+}
+button{
+	outline: none;
+	border: none;
+}
+/*------- FORMULARIO CONTENIDO COL 1 ------------*/
+input,textarea,select{
+	margin-top: 10px;
+}
+/*buscar input*/
+.buscar{
+	padding: 50px 50px 0px 50px;
+	width: calc(100% - 100px);
+}
+
+.buscar input[type=search]{
+	font-family: 'Arial', sans-serif;
+	font-size: 16px;
+	width: 100%;
+	border-radius: 7px;
+	background: var(--blanco-trafico);
+	color: var(--gris-senales);
+	box-shadow: 0 15px 10px 1px rgba(128, 128, 128, 0.05);
+	padding: 1em 2em;
+	outline: none;
+	border: none;
+	transition: 0.3s linear;
+}
+
+/*-Xbuscar input-X*/
+
+/*-titulo-*/
+.titulo{
+	padding: 20px 50px 0px 50px;
+	display: inline-flex;
+}
+.titulo .fa{
+	color: var(--gris-senales);
+	font-size: 30px;
+	/*padding: 2px;*/
+	line-height: calc(40px - 10px);
+}
+.titulo h1{
+	margin: 0;
+	margin-left: 15px;
+	font-size: 2rem;
+	color: var(--gris-senales);
+}
+/*-X-titulo-X*/
+
+.contenido-book{
+	/*background: #ff5c29;*/
+	padding: 50px;
+	width: calc(100% - 100px);
+	display: flex;
+	flex-direction: row;
+}
+
+.contenido-book .col{
+	/*background: #00b285;*/
+	margin: 5px;
+	width: calc(50% - 10px);
+}
+/*----- DATOS ----*/
+.form-book{
+	box-shadow: 0 15px 10px 1px rgba(128, 128, 128, 0.05);
+	text-align: center;
+	border-radius: 5px;
+	background: var(--blanco-trafico);
+	padding: 20px;
+	height: calc(100% - 40px);
+	width: calc(100% - 40px);
+}
+
+.form-book input[type=text],input[type=number],textarea,select {
+	/*width: 210px;*/
+	font-family: 'Arial', sans-serif;
+	font-size: 16px;
+	/*font-size: 1.5rem;*/
+	width: 100%;
+	box-sizing: border-box;	
+	display: inline-block;
+	text-align: center;
+	border-radius: 7px;
+	background: #eee;
+	color: var(--gris-senales);
+	padding: 1em 2em;
+	outline: none;
+	border: none;
+	transition: 0.3s linear;
+}
+
+.form-book textarea{
+	height: 100px;
+}
+
+.form-book input[type=number]{
+	width: 50%;
+	float: left;
+}
+
+.form-book select{
+	margin-left: 5px;
+	width: calc(50% - 5px);
+	float: right;
+}
+
+::placeholder{color: var(--gris-senales);}
+
+.form-book input[type=text]:focus {
+	background: rgba(0, 0, 333, 0.10);
+}
+
+.form-book input[type=number]:focus{
+	background: rgba(0, 0, 333, 0.10);
+}
+
+.form-book textarea:focus {
+	background: rgba(0, 0, 333, 0.10);
+}
+
+/*-------BUSCAR INPUT --------------*/
+
+
+/*---x----BUSCAR INPUT -------x-------*/
+
+/*-------- BOTON ROSES ---------*/
+.form-btn{
+	display: flex;
+	flex-direction: row;
+	float: bottom; 
+}
+
+.form-btn .btn-rose {
+	background-image: linear-gradient(to left, rgba(255, 146, 202, 0.75) 0%, rgba(145, 149, 251, 0.86) 100%);
+	box-shadow: 0 9px 25px -5px #df91fb;
+	font-family: 'Arial', sans-serif;
+	padding: 0.5em 1em;
+	margin: 1em 0 0 10px;
+	border-radius: 7px;
+	cursor: pointer;
+	color: #FFFFFF;
+	outline: none;
+	border: none;
+	transition: 0.3s linear;
+}
+
+.form-btn .btn-rose:hover{transform: translatey(2px);}
+.form-btn .btn-rose:active{transform: translatey(5px);}
+
+/*----x---- BOTON ROSES ---x------*/
+
+/*----x--- FORMULARIO CONTENIDO COL 1 ------x------*/
+
+/*---------- FILE CARGA IMAGEN COL 2 -----------------*/
+
+.form-book-imagen{
+	box-shadow: 0 15px 10px 1px rgba(128, 128, 128, 0.05);
+	text-align: center;
+	border-radius: 5px;
+	background: var(--blanco-trafico);
+	padding: 20px;
+	height: calc(100% - 40px);
+	width: calc(100% - 40px);
+
+	display: flex;
+	flex-direction: column;
+}
+
+.form-book-imagen .item:nth-child(1){
+	height: 80%;
+}
+
+.form-book-imagen .img-preve img{
+	 width: 50%;
+	 height: 100%;
+	 border: 2px solid #fff;
+}
+
+/*---- INPUT-FILE- STYLE--*/
+
+.form-book-imagen .inputModificado {
+    margin: 20px 0px 10px 50px;
+    clear: both;
+    display: flex;
+    flex-direction: row;
+}
+/*-- caja de file css-----*/
+.form-book-imagen .inputImagen {
+    font-weight: bold;
+	width: 60%;
+	text-align: center;
+	border-radius: 7px;
+	background: #eee;
+	outline: none;
+	border: none;
+	color: var(--gris-senales);
+	transition: 0.3s linear;
+    float: left;
+    margin-top:  -2px;
+}
+
+/*-- boton file con css */
+.form-book-imagen .botonInputFileModificado {
+    position: relative;
+    width: 28%;
+    background-image: linear-gradient(to left, rgba(255, 146, 202, 0.75) 0%, rgba(145, 149, 251, 0.86) 100%);
+	box-shadow: 0 9px 25px -5px #df91fb;
+	/*font-family: 'Abel', sans-serif;*/
+	border-radius: 7px;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 5px;
+	outline: none;
+	border: none;
+	transition: 0.3s linear;
+}
+
+.form-book-imagen .botonInputFileModificado:hover {   
+    transform: translatey(2px);
+}
+
+.form-book-imagen .botonInputFileModificado .boton {
+    text-align: center;
+    padding: 5px 5px;
+}
+
+/*input oculto*/
+.form-book-imagen .botonInputFileModificado .inputImagenOculto {
+    opacity: 0;
+    position: absolute;
+    margin-left: -160px;
+    width: 225px;
+}
+
+/*---x- INPUT-FILE- STYLE-x-*/
+
+/*----X------ COL 2 FILE CARGA IMAGEN --------X---------*/
+
+
+/*------------- CONTENIDO LISTA DE LIBROS TABLE ----------*/
+
+	.listalibro{
+		margin: 50px;
+		width: calc(100% - 100px);
+	}
+
+	.listalibro .contenedor{
+		width: 100%;
+		height: 100%;
+		background: var(--blanco-trafico);
+		box-shadow: 0 15px 10px 1px rgba(128, 128, 128, 0.05);
+		display: flex;
+		flex-direction: row;
+		border-radius: 5px;
+		margin-top: 3px;
+	}
+
+	.listalibro .contenedor .fila{
+		/*background: #00b285;*/
+		margin: 2px;
+		width: 40%;
+		padding: 5px;
+	}
+
+	.listalibro .contenedor .fila:first-child{
+		width: 90%;
+	}
+
+	.listalibro .contenedor .fila:nth-child(2){
+		width: 50%;
+	}
+
+
+	/*---------CABECERA-LISTA-DATOS----*/
+	.listalibro .cabecera{
+		/*background: #ff5c29;*/
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.listalibro .cabecera .col-lis{
+		/*background: #00b285;*/
+		color: var(--gris-senales);
+		width: 40%;
+		height: auto;
+		padding: 5px;
+		margin-left: 10px;
+	}
+
+	.listalibro .cabecera .col-lis:first-child{
+		width: 90%;
+	}
+	
+	.listalibro .cabecera .col-lis:nth-child(2){
+		width: 50%;
+	}
+
+	/*--x-- CABECERA-LISTA.DATOS --x---*/
+
+	.fila .subfila{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.fila .subfila .fila1 h2,p,span,address{
+		display: block;
+		font-size: 16px;
+		margin: 0;
+		margin-left: 10px;
+		color: var(--gris-senales);
+	}
+
+	.fila .subfila .fila1 span{
+		font-size: 10px;
+	}
+
+	.contenedor .fila .descrip{
+		/*font-size: 14px;*/
+	}
+
+	.fila .subfila .fila1 img{
+		width: 43px;
+		height: 53px;
+		transition: 0.3s linear;
+		border: 2px solid #fff;
+		margin: -2px;
+	}
+
+	.contenedor:hover{
+		transform: translateY(-3px);
+		background: rgba(0, 0, 333, 0.05);
+	}
+
+	.contenedor:hover .fila .subfila .fila1 img{
+		transform: scale(1.4);
+	}
+
+	/*---COLUMNA ACCIONES BOTONES EDITAR-BORRAR---*/
+
+	.acciones-btn{
+		display: inline-flex;
+	}
+
+	.btn-accion{
+		position: relative;
+		width:45px;
+		height:45px;
+		display:block;
+		text-align:center;
+		cursor: pointer;
+		margin: 0 3px;
+		border-radius: 50%;
+		padding: 5px;
+		box-sizing: border-box;
+		text-decoration:none;
+		box-shadow: 0 10px 15px rgba(128, 128, 128, 0.2);
+		background: linear-gradient(0deg, #ddd, #f7fcf6);
+		transition: .5s;
+	}
+
+	.btn-accion:hover{
+  		box-shadow: 0 2px 5px rgba(128, 128, 128, 0.3);
+	}
+
+	.btn-accion .relieve{
+		widht: 100%;
+		height:100%;
+		display:block;
+		background: linear-gradient(0deg, #f7fcf6, #ddd);
+		border-radius: 50%;
+	}
+	/*icon fonteawesome*/
+	.btn-accion .fa {
+		background: -webkit-linear-gradient(rgb(255,146,202),rgb(145,149,251));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent; 
+		line-height: calc(45px - 10px);
+		font-size:20px;
+		transition: .5s;
+	}
+
+	/* pop-up text */
+	.btn-accion span {
+	  color: var(--gris-senales);
+	  position:absolute;
+	  bottom:0;
+	  left:-20px;
+	  right:-20px;
+	  padding:5px 7px;
+	  z-index:-1;
+	  font-size:14px;
+	  border-radius:2px;
+	  background: linear-gradient(0deg, #eee, #f7fcf6);
+	  visibility:hidden;
+	  opacity:0;
+	  -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	  -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	  -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	}
+
+	/* pop-up text arrow */
+	.btn-accion span:before {
+	  content:'';
+	  width: 0; 
+	  height: 0; 
+	  border-left: 5px solid transparent;
+	  border-right: 5px solid transparent;
+	  border-top: 5px solid #eee;
+	  position:absolute;
+	  bottom:-5px;
+	  left: 30px;
+	}
+
+	/* text pops up when icon is in hover state */
+	.btn-accion:hover  span{
+	  bottom:50px;
+	  visibility:visible;
+	  opacity:1;
+	}
+
+	/*--X-COLUMNA ACCIONES BOTONES EDITAR-BORRAR--X-*/
+
+	/*-------PAGINACION--------------*/
+	.block-27{
+		margin-top: 50px;
+		margin-bottom: 50px;
+		display: flex;
+		justify-content: center;
+		color: var(--text-bla);
+	}
+
+	.block-27 ul {
+		padding: 0;
+		margin: 0; 
+		color: var(--gris-senales);
+	}
+
+	.block-27 ul li {
+		display: inline-block;
+		font-weight: 400;
+		margin-left: 5px;
+	}
+
+	.block-27 ul li a, .block-27 ul li span{
+		text-align: center;
+		margin: 0;
+		width: 40px;
+		height: auto;
+		line-height: 30px;
+		color: var(--gris-senales);
+	}
+
+	.block-27 ul li.active a, .block-27 ul li.active span {
+		background-image: linear-gradient(to left, rgba(255, 146, 202, 0.75) 0%, rgba(145, 149, 251, 0.86) 100%);
+		box-shadow: 0 9px 25px -5px #df91fb;
+		color: var(--blanco-senales);
+		transition: 0.3s linear;
+	}
+
+	.block-27 li span:hover, .block-27 li a:hover {
+		background-image: linear-gradient(to left, rgba(255, 146, 202, 0.75) 0%, rgba(145, 149, 251, 0.86) 100%);
+		box-shadow: 0 9px 25px -5px #df91fb;	
+		color: var(--blanco-senales);
+		transition: 0.3s linear;
+	}
+
+	/*---x----PAGINACION--------x------*/
+
+	/*---btn-donar--*/
+	footer{
+		display: inline-flex;
+		flex-direction: row;
+		margin-bottom: 10px;
+		padding: 10px;
+		width: calc(100% - 20px);
+		border-top: 1px solid var(--gris-senales);
+		text-align: center;
+		justify-content: center;
+	}
+	footer span{
+		line-height: 30px;
+	}
+	footer .btn-donar{
+		padding: 0.4em 1em;
+		margin-left: 5px;
+		border: 1px solid var(--gris-senales);
+		color: var(--gris-senales);
+		border-radius: 5px;
+		transition: 0.3s linear;
+	}
+
+	footer .btn-donar .fas{
+		color: #f39fdc;
+	}
+	footer .btn-donar:hover .fas{
+		color: red;
+	}
+	footer .btn-donar:hover{
+		transform: translateY(2px);
+	}
+
+	/*-X--btn-donar-X-*/
+
+/*-------X------ CONTENIDO LISTA DE LIBROS TABLE -----X-----*/
+
+
+/*RESPONSIBLE MEDIA*/
+
+/* --- Viewport less then or equal to 768px */
+
+@media only screen and (max-width: 768px){
+	.contenido-book{
+		padding: 20px;
+		width: calc(100% - 40px);
+	}
+
+	.listalibro{
+		margin: 20px;
+		width: calc(100% - 40px);
+	}
+
+	.botonInputFileModificado .boton {
+	    text-align: center;
+	    font-size: 12px;
+	}
+
+	.form-book-imagen .inputModificado {
+	    margin: 20px 0px 0px 0px;
+	}
+
+	.listalibro .contenedor p{
+		font-size: 15px;
+	}	
+
+	.fila .subfila .fila1 h2,address,span{
+		font-size: 15px;
+		margin: 0;
+		margin-left: 10px;
+	}
+
+	.form-book-imagen .img-preve img{
+		 width: 70%;
+	}
+
+}
+
+@media only screen and (max-width: 576px){
+	.contenido-book{
+		padding: 10px;
+		width: calc(100% - 20px);
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.contenido-book .col{
+		margin: 5px;
+		width: calc(100% - 10px);
+	}
+
+	.form-book-imagen{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.form-book-imagen .item{
+		width: 50%;
+	}
+
+	.form-book-imagen .inputModificado {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+	.form-book-imagen .inputImagen {
+		padding: 1em 1em;
+		width: 80%;
+	}
+
+	.form-book-imagen .botonInputFileModificado {
+	    width: 28%;
+	    margin-top: 10px;
+	}
+
+	.form-book-imagen .botonInputFileModificado .inputImagenOculto {
+	    margin-left: -60px;
+	    margin-top: 0;
+	    width: 200px;
+	}
+
+	.listalibro{
+		margin: 10px;
+		width: calc(100% - 20px);
+	}
+
+	.listalibro .cabecera .col-lis:first-child{
+		width: 75%;
+	}
+	
+	.listalibro .cabecera .col-lis span{
+		font-size: 12px;
+	}
+
+	.listalibro .contenedor p{
+		font-size: 12px;
+	}	
+
+	.fila .subfila .fila1 h2,address,span{
+		font-size: 12px;
+		margin: 0;
+		margin-left: 10px;
+	}
+}
